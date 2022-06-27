@@ -1,0 +1,786 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, Sans-Serif;
+    z-index: 1;
+}
+
+.container {
+    width: 1000px;
+    margin: 10px auto;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.h {
+    display: flex;
+}
+
+.h-list1 {
+    list-style: none;
+    margin: auto auto auto 0;
+}
+
+.h-list2 {
+    list-style: none;
+    margin: auto 0 auto auto;
+    display: flex;
+}
+
+.h-item {
+    margin: 0 8px;
+    position: relative;
+}
+
+.seperate::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: -9px;
+    width: 1.5px;
+    height: 14px;
+    background-color: #0574c3;
+}
+
+.h-item a {
+    color: rgb(19, 97, 174);
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.h-item:hover {
+    text-decoration: underline;
+}
+
+.search {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.txt {
+    width: 184px;
+    height: 32px;
+    border: 0;
+    background: url(./assets/hinh/Capture.PNG);
+    background-size: 185px 33px;
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #666;
+    position: absolute;
+    right: 35px;
+
+}
+
+.btn {
+    background: url(./assets/hinh/Capture\ -\ Copy.PNG);
+    background-size: 35px 32px;
+    width: 35px;
+    height: 32px;
+    border: 0px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.menu {
+    margin-top: 10px;
+    min-height: 40px;
+    width: 1000px;
+    background-color: rgb(24, 85, 144);
+    border-radius: 3px;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 10px 0;
+    display: flex;
+    text-align: center;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item a {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px 12px;
+}
+
+.seperate1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -6px;
+    left: 0px;
+    width: 2px;
+    height: 32px;
+    background: linear-gradient(90deg, rgba(16, 75, 130, 0.5), rgb(32, 97, 162, 0.5));
+}
+
+.listgioithieu {
+    list-style: none;
+    position: absolute !important;
+    min-width: 300px;
+    margin-top: 12px;
+    padding: 1px;
+
+}
+
+.listgioithieu a {
+    position: absolute;
+    padding: 8px 5px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 100;
+    color: #666;
+    text-align: left;
+    border: solid rgb(223, 215, 215) 0.5px;
+    background: rgb(248, 248, 248);
+    display: none;
+
+}
+
+.itemgioithieu a {
+    color: #333;
+}
+
+.itemgioithieu a:hover {
+    color: white !important;
+    background: #2273b8;
+
+}
+
+.menu-item a:hover {
+    color: rgba(136, 202, 253, 0.5);
+}
+
+.menu-item:hover .listgioithieu a {
+    display: block;
+    z-index: 3;
+    position: unset;
+    transition: 0.1s;
+    visibility: visible;
+}
+
+.theme {
+    min-height: 45px;
+    background-color: #ff0;
+    margin-bottom: 5px;
+
+}
+
+.themetlt {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 20px;
+    color: #f00;
+    z-index: -1;
+}
+
+.news {
+    z-index: -1;
+    display: flex;
+    justify-content: space-around;
+    width: 68%;
+    margin-top: 16px;
+}
+
+aside {
+    position: inherit;
+    z-index: 0;
+}
+
+.DVTT {
+    float: right;
+    background-color: #235ca1;
+    width: 300px;
+    border-radius: 5px;
+    height: 580px;
+}
+
+.line1 {
+    margin-left: 15px;
+    border-top: 1px;
+    opacity: 0.2;
+    color: #666;
+}
+
+.namels {
+    color: #ffd800;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px 0 10px 25px;
+}
+
+#seperate2 {
+    position: relative;
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 1px;
+    height: 16px;
+    background-color: #80afd8;
+    opacity: 0.2;
+}
+
+.tabs {
+    margin-left: 10px;
+    display: flex;
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+
+}
+
+.tab-item {
+    padding: 5px 0 5px 15px;
+}
+
+.tab-item.active {
+    color: #ffd800;
+}
+
+.tab-list {
+    margin-top: 20px;
+    width: 300px;
+    display: none;
+    list-style: none;
+
+}
+
+.tab-list.active {
+    display: block;
+}
+
+.mis1 {
+    margin: 5px 5px 2px 30px;
+}
+
+.mis1 a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+.mis1 a:hover {
+    color: #ffd800;
+}
+
+.TDTT {
+    background: url(./assets/hinh/TDTT.PNG) no-repeat;
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    top: 600px;
+}
+
+.TDTT ul {
+    list-style: none;
+    list-style-image: url(./assets/hinh/arrow.png);
+    padding-top: 50px;
+    margin-left: 55px;
+}
+
+.TDTT ul li {
+    margin: 10px 0px;
+}
+
+.TDTT ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.TDTT ul li a:hover {
+    color: #f00;
+}
+
+.CT {
+    color: #ffd800;
+    background: url(./assets/hinh/bg_chuongtrinh.png) no-repeat;
+    width: 300px;
+    height: 180px;
+    position: absolute;
+    right: 0px;
+    top: 805px;
+}
+
+.ctl {
+    display: flex;
+    margin-top: 15px;
+}
+
+.ctl1 {
+    list-style: none;
+}
+
+.ctl1 li {
+    margin: 0 15px;
+}
+
+.ctl1 li a {
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+}
+
+.ctl2 {
+    list-style: none;
+}
+
+.ctl2 li {
+    margin: 0 25px;
+}
+
+.ctl2 li a {
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+}
+
+.ctl1 li a:hover,
+.ctl2 li a:hover {
+    text-decoration: underline;
+}
+
+.tvsv {
+    position: absolute;
+    top: 970px;
+    right: 0px;
+}
+
+.tvsv:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.ts2022 {
+    position: absolute;
+    top: 1150px;
+    right: 0px;
+}
+
+.era {
+    position: absolute;
+    border: solid black 1px;
+    top: 1340px;
+    right: 0px;
+}
+
+.era:hover {
+    transform: scale(1.07);
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.NT {
+    border: solid black 1px;
+    position: absolute;
+    top: 1405px;
+    right: 0px;
+}
+
+.NT:hover {
+    transform: scale(1.07);
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.videotlt {
+    position: absolute;
+    top: 1500px;
+    right: 250px;
+}
+
+.listvideo {
+    position: absolute;
+    top: 1530px;
+    right: 0px;
+}
+
+.listvideo ul {
+    list-style: none;
+}
+
+.lvi {
+    margin: 1.5px 0;
+    max-width: 300px;
+}
+
+.nenclip {
+    padding-top: 3px;
+    background: #B22222;
+    ;
+}
+
+.lvi a {
+    text-align: center;
+    color: aliceblue;
+    font-size: 13px;
+    padding: 8px 25px;
+    text-decoration: none;
+    background: #B22222;
+    display: block;
+    font-weight: bold;
+}
+
+.lvi a:hover {
+    background: rgb(128, 128, 128);
+}
+
+.selectimg {
+    position: absolute;
+    top: 550px;
+    left: 550px;
+}
+
+.nextprev {
+    opacity: 0;
+}
+
+.nextprev:hover {
+    opacity: 0.4;
+}
+
+#prev {
+    z-index: 2;
+    position: absolute;
+    left: 8px;
+    opacity: 1;
+    top: 400px;
+    cursor: pointer;
+}
+
+#next {
+    z-index: 2;
+    position: absolute;
+    right: 330px;
+    opacity: 1;
+    top: 400px;
+    cursor: pointer;
+}
+
+
+.culum1 {
+    width: 330px;
+    height: 1000px;
+    background: url(./assets/hinh/tintuc.jpg) no-repeat;
+    background-size: 330px;
+}
+
+.c1h1 {
+    padding-top: 7px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.c1h1 a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.c1h2 {
+    margin: 10px 30px;
+    width: 270px;
+}
+
+.c1h2 a {
+    font-size: 15px;
+    color: rgb(1, 1, 165);
+    text-decoration: none;
+    text-align: center;
+}
+
+.c1h2 a:hover {
+    text-decoration: underline;
+}
+
+.imgnews {
+    width: 275px;
+    height: 105px;
+    margin-left: 30px;
+}
+
+.c1h3 {
+    font-size: 10px;
+    margin-left: 30px;
+    color: rgb(121, 116, 116);
+    font-weight: 100;
+}
+
+.line {
+    margin-left: 35px;
+}
+
+.c1l {
+    margin-left: 40px;
+    margin-right: 20px;
+    list-style-image: url(./assets/hinh/arrow.png);
+}
+
+.c1l li a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #666;
+    font-weight: 100;
+}
+
+.c1l li a:hover {
+    color: rgb(59, 118, 245);
+}
+
+
+.btn1 {
+    font-size: 13px;
+    text-decoration: none;
+    padding: 3px 8px;
+    box-shadow: inset 0 100px 0 0 #0574c3;
+    background-color: #df282d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    float: right;
+    margin-top: 5px;
+    margin-right: 25px;
+    cursor: pointer;
+    transition: ease 0.5s;
+
+}
+
+.btn1:hover {
+    box-shadow: inset 0 0 0 0 #0574c3;
+}
+
+.culum21 {
+
+    width: 330px;
+    height: 500px;
+    background: url(./assets/hinh/tuyendung.jpg) no-repeat;
+    background-size: 330px;
+}
+
+.c2h1 {
+    padding-top: 20px;
+    text-align: left;
+}
+
+.c2h1 a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.c2h2 {
+    margin: 10px 30px;
+    width: 270px;
+}
+
+.c2h2 a {
+    font-size: 15px;
+    color: rgb(1, 1, 165);
+    text-decoration: none;
+    text-align: center;
+}
+
+.c2h2 a:hover {
+    text-decoration: underline;
+}
+
+.imgnews2 {
+    width: 275px;
+    height: 105px;
+    margin-left: 30px;
+}
+
+.c2h3 {
+    font-size: 10px;
+    margin-left: 30px;
+    color: rgb(121, 116, 116);
+    font-weight: 100;
+}
+
+.line {
+    margin-left: 35px;
+}
+
+.c2l {
+    margin-left: 35px;
+    margin-right: 15px;
+    list-style-image: url(./assets/hinh/arrow.png);
+}
+
+.c2l li a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #666;
+    font-weight: 100;
+}
+
+.c2l li a:hover {
+    color: rgb(59, 118, 245);
+}
+
+
+.culum22 {
+    width: 330px;
+    height: 500px;
+    background: url(./assets/hinh/thongbao.jpg) no-repeat;
+    background-size: 330px;
+}
+
+.c22h1 {
+    padding-top: 20px;
+    text-align: left;
+}
+
+.c22h1 a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.c22h2 {
+    margin: 10px 30px;
+    width: 270px;
+}
+
+.c22h2 a {
+    font-size: 15px;
+    color: rgb(1, 1, 165);
+    text-decoration: none;
+    text-align: center;
+}
+
+.c22h2 a:hover {
+    text-decoration: underline;
+}
+
+.imgnews22 {
+    width: 275px;
+    height: 105px;
+    margin-left: 30px;
+}
+
+.c22h3 {
+    font-size: 10px;
+    margin-left: 30px;
+    color: rgb(121, 116, 116);
+    font-weight: 100;
+}
+
+.line {
+    margin-left: 35px;
+}
+
+.c22l {
+    margin-left: 35px;
+    margin-right: 15px;
+    list-style-image: url(./assets/hinh/arrow.png);
+}
+
+.c22l li a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #666;
+    font-weight: 100;
+}
+
+.c22l li a:hover {
+    color: rgb(59, 118, 245);
+}
+
+
+
+.tinvan {
+    margin-top: 50px;
+    width: 60%;
+}
+
+.tinvantlt a {
+    text-decoration: none;
+    font-weight: 200;
+    color: #0066a1;
+    font-size: 20px;
+}
+
+.tinvantlt a:hover {
+    color: #f00;
+}
+
+.hinhvatin {
+    margin-top: 10px;
+    padding-left: 15px;
+    display: flex;
+    width: 67%;
+    ;
+}
+
+.para {
+    font-size: 14px;
+    color: #333;
+    margin: 0 20px;
+
+}
+
+.xemchitiet {
+    background: url(./assets/hinh/xemchitiet.jpg);
+    min-width: 120;
+    height: 30px;
+    border: none;
+    margin-bottom: 50px;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+
+
+.menulf {
+    margin-top: 300px;
+    min-height: 40px;
+    width: 1000px;
+    background-color: #2273b8;
+    border-radius: 3px;
+    display: flex;
+}
+
+.lf {
+    list-style: none;
+    margin: auto 16px;
+}
+
+.lf li {
+    margin: 0 20px;
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.lf li a {
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+}
+
+.lf li a:hover {
+    text-decoration: underline;
+}
+
+.info {
+    margin-top: 10px;
+    margin-bottom: 100px;
+    font-size: 12px;
+}
+
+.logo {
+    font-size: 25px;
+    position: absolute;
+    bottom: 45px;
+    right: 50px;
+}
